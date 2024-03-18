@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"pmsm_405\startup_stm32f405xx.o"
+"pmsm_405\main.o"
+"pmsm_405\stm32f4xx_it.o"
+"pmsm_405\stm32f4xx_hal_msp.o"
+"pmsm_405\stm32f4xx_hal_can.o"
+"pmsm_405\stm32f4xx_hal_rcc.o"
+"pmsm_405\stm32f4xx_hal_rcc_ex.o"
+"pmsm_405\stm32f4xx_hal_flash.o"
+"pmsm_405\stm32f4xx_hal_flash_ex.o"
+"pmsm_405\stm32f4xx_hal_flash_ramfunc.o"
+"pmsm_405\stm32f4xx_hal_gpio.o"
+"pmsm_405\stm32f4xx_hal_dma_ex.o"
+"pmsm_405\stm32f4xx_hal_dma.o"
+"pmsm_405\stm32f4xx_hal_pwr.o"
+"pmsm_405\stm32f4xx_hal_pwr_ex.o"
+"pmsm_405\stm32f4xx_hal_cortex.o"
+"pmsm_405\stm32f4xx_hal.o"
+"pmsm_405\stm32f4xx_hal_exti.o"
+"pmsm_405\stm32f4xx_hal_tim.o"
+"pmsm_405\stm32f4xx_hal_tim_ex.o"
+"pmsm_405\system_stm32f4xx.o"
+"pmsm_405\adc.o"
+"pmsm_405\delay.o"
+--library_type=microlib --strict --scatter "pmsm_405\pmsm_405.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pmsm_405.map" -o pmsm_405\pmsm_405.axf

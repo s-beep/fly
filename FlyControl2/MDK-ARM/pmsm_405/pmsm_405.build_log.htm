@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: zy zhangyi1987535@126.com, zy, LIC=03C6R-K6NAK-FWJ2N-YGR77-4RU7T-HGX3C
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\program\test02\pmsm_405 - Swim -LED\MDK-ARM\pmsm_405.uvprojx
+Project File Date:  10/07/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'pmsm_405'
+assembling startup_stm32f405xx.s...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_can.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash.c...
+compiling main.c...
+../Core/Src/main.c(704): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pi_spd.Ref =  MOTOR.Speed_Ref /SPD_PU;
+../Core/Src/main.c(705): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pi_spd.Fbk = MOTOR.Speed /SPD_PU;
+../Core/Src/main.c(745): warning:  #940-D: missing return statement at end of non-void function "CAN1_Send_Msg" 
+  }
+../Core/Src/main.c(751): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        if( pwm1.MfuncC1 > 0.92) pwm1.MfuncC1= 0.92;
+../Core/Src/main.c(753): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        if( pwm1.MfuncC2 > 0.92) pwm1.MfuncC2= 0.92;
+../Core/Src/main.c(755): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        if( pwm1.MfuncC3 > 0.92) pwm1.MfuncC3= 0.92;
+../Core/Src/main.c: 6 warnings, 0 errors
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal.c...
+compiling system_stm32f4xx.c...
+compiling adc.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling delay.c...
+compiling stm32f4xx_hal_tim.c...
+linking...
+Program Size: Code=7740 RO-data=440 RW-data=292 ZI-data=1300  
+FromELF: creating hex file...
+"pmsm_405\pmsm_405.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_pmsm_405
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
